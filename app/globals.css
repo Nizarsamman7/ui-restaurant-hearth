@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #1c1410; color: #f3ebe3; font-family: var(--font-body), sans-serif; }
+a { color: inherit; text-decoration: none; }
+.reserve { display: flex; justify-content: space-between; gap: 1rem; align-items: center; padding: 0.7rem 1.2rem; background: #c4552a; color: #1c1410; font-weight: 600; }
+.reserve a { border-bottom: 1px solid #1c1410; }
+.top { display: flex; justify-content: space-between; padding: 1.2rem; }
+.word { font-family: var(--font-display), serif; font-size: 1.8rem; }
+.hero { padding: 8vh 1.2rem 2rem; text-align: center; }
+.hero h1 { font-family: var(--font-display), serif; font-weight: 500; font-size: clamp(4rem, 12vw, 8rem); margin: 0; line-height: 0.85; }
+.courses { max-width: 680px; margin: 0 auto; padding: 1rem 1.2rem 3rem; }
+.course { display: grid; grid-template-columns: 110px 1fr; gap: 1rem; padding: 1rem 0; border-top: 1px solid #3a2c26; }
+.course span { color: #c4552a; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.75rem; }
+.pad { max-width: 640px; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
+.inquiry-form { display: grid; gap: 0.75rem; }
+label { display: grid; gap: 0.3rem; }
+input, select, textarea { font: inherit; background: #2a211c; color: #f3ebe3; border: 1px solid #3a2c26; padding: 0.75rem; }
+button { font: inherit; background: #c4552a; color: #1c1410; border: 0; padding: 0.85rem; font-weight: 600; cursor: pointer; }
+.form-success { border: 1px solid #c4552a; padding: 1rem; }
+@media (max-width: 700px) { .course { grid-template-columns: 1fr; } }
