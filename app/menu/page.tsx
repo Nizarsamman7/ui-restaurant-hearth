@@ -1,29 +1,24 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { InquiryForm } from "@/components/InquiryForm";
+export const metadata: Metadata = { title: "Menu" };
 
-export const metadata: Metadata = { title: "Reserve" };
-
-export default function MenuPage() {
+export default function Page() {
   return (
-    <>
-      <header className="top">
-        <Link className="word" href="/">Hearth</Link>
-        <Link href="/">Tonight</Link>
-      </header>
-      <section className="pad">
-        <h1>Hold a table</h1>
-        <InquiryForm
-          submitLabel="Request seats"
-          fields={[
-            { name: "name", label: "Name" },
-            { name: "phone", label: "Phone", type: "tel" },
-            { name: "seats", label: "Seats", type: "select", options: ["2", "3", "4", "5", "6"] },
-            { name: "when", label: "Night" },
-            { name: "note", label: "Notes", type: "textarea" },
-          ]}
-        />
-      </section>
-    </>
+    <article className="sheet">
+      <p className="eyebrow">{"Tonight"}</p>
+      <h1>{"Four courses. The kitchen does not run a side list."}</h1>
+      <p className="lede">{"Bread is on the table. A cheese plate can be added if you ask before the last course."}</p>
+      
+      
+      <div className="stack">
+<div className="row"><b>{"Snack"}</b><span>{"Warm olives, fennel, chilli"}</span></div>
+<div className="row"><b>{"First"}</b><span>{"Celeriac soup, brown butter"}</span></div>
+<div className="row"><b>{"Second"}</b><span>{"Coal-roast chicken, jus, greens"}</span></div>
+<div className="row"><b>{"Last"}</b><span>{"Burnt honey custard"}</span></div>
+<div className="row"><b>{"Menu"}</b><span>{"€48"}</span></div>
+<div className="row"><b>{"With wine pair"}</b><span>{"€72"}</span></div>
+</div>
+      
+      
+    </article>
   );
 }
